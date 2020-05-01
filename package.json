@@ -4,7 +4,9 @@
   "description": "Authentication Sprint Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,11 @@
     "express": "^4.16.4",
     "jsonwebtoken": "^8.3.0",
     "knex": "^0.15.2",
-    "sqlite3": "^4.0.2"
+    "sqlite3": "^4.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
-  }
+  },
+  "snyk": true
 }
